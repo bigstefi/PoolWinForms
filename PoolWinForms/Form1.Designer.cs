@@ -25,13 +25,17 @@
 
         private void DrawLine(Point start, Point end)
         {
-            Pen pen = new Pen(Color.FromArgb(255, 0, 0, 0));
+            Pen pen = new Pen(Color.FromArgb(255, 50, 100, 200));
+            pen.Width = 5;
+
             this.CreateGraphics().DrawLine(pen, start.X, start.Y, end.X, end.Y);
         }
 
         private void DrawCircle(Point origin, int radius)
         {
-            Pen pen = new Pen(Color.FromArgb(255, 0, 0, 0));
+            Pen pen = new Pen(Color.FromArgb(255, 200, 100, 50));
+            pen.Width = 5;
+
             this.CreateGraphics().DrawEllipse(pen, origin.X, origin.Y, radius, radius);
         }
 
